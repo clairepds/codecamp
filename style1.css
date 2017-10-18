@@ -6,6 +6,7 @@ body {
 font-family: Verdana, sans-serif;
 font-size: 100%;
 }
+
 header {
 font-size: 150%;
 color: #CD5C5C;
@@ -26,7 +27,7 @@ h2 {
 }
 
 .left {
-  background-color: black;
+  background-image:url(images/lights.jpg);
   padding: 2%;
 }
 
@@ -87,18 +88,8 @@ section {
     padding-left: 0px;
 }
 
-
-.recherche {
-  font-size: 130%;
-  color: white;
-  text-align: left;
-}
-
-.recherche {
-    padding-top: 40px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+.search-input {
+  width: 148px;
 }
 
 p {
