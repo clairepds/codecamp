@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Ajout du lien Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style1.css"/> <!--Ajout du fichier CSS-->
+  <meta charset="utf-8"/>
+  <title>Usound</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--Ajout du fichier JS-->
+  <script src="javascript.js"></script>
+</head>
+<body>
+  <div id="corps" class="row"> <!--Création des colonnes-->
+    <div class="col-sm-2 left"><!--Bandeau de gauche-->
+      <p>
+        <img src="images/logo.png" class="logo"/><!--Insertion du logo-->
+      </p>
+      <header>
+        <h3>Usound</h3>
+      </header>
+          <form class="t1-form form-search js-search-form" action="/search" id="global-nav-search"><!--Insertion barre de recherche-->
+             <input class="search-input" type="text" id="search-query" placeholder="Recherche" name="q" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-9">
+             <button type="submit" class="Icon Icon--medium Icon--search nav-search" tabindex="-1">&#128269;<!--Ajout du logo loupe-->
+             </button>
+
+      <section>
+        <h4>Ma musique</h4><!--Menu de gauche-->
+        <a href="#suggest" class="lien_suggest" style=couleur1>- Suggestions</a>
+      </section>
+    </div>
+
+
+    <div class="col-sm-10 grande"><!--colonne faisant office de body-->
+      <!--Menu supérieur-->
+      <h5> <a href="#topmondial" class="lien_mond" style="couleur2">A LA UNE</a>  - <a href="#topspot" class="lien_spot" style="couleur2">DECOUVRIR</a> - <a href="#nouv" class="lien_nouv" style="couleur2">NOUVEAUTES</a></h5>
+
+      <div class="col-sm-5 prim"><!--Colonne de gauche-->
+<!--Insertion des players-->
+        <div class="topmond">
+          <h1 id="topmondial">TOP MONDIAL</h1>
+          <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotifycharts:playlist:37i9dQZEVXbMDoHDwVN2tF" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+<!--Insertion du vote à étoiles-->
+        <div class="rating">
+                <a href="#5" title="Donner 5 étoiles">☆</a>
+                <a href="#4" title="Donner 4 étoiles">☆</a>
+                <a href="#3" title="Donner 3 étoiles">☆</a>
+                <a href="#2" title="Donner 2 étoiles">☆</a>
+                <a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
+        <div class="topfrance">
+          <h1>TOP FRANCE</h1>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:21rh5xng5cux6imvego63eqqy:playlist:2I1XcNKzDBSWZ7kf7fCzzo" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+        <div class="rating">
+                <a href="#5" title="Donner 5 étoiles">☆</a>
+                <a href="#4" title="Donner 4 étoiles">☆</a>
+                <a href="#3" title="Donner 3 étoiles">☆</a>
+                <a href="#2" title="Donner 2 étoiles">☆</a>
+                <a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
+      </div>
+      <div class="col-sm-5 dou"><!--Colonne de droite-->
+        <h1>TOP EUROPE</h1>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:endurance303:playlist:5bIXVOFbasVWt8SycWGvDw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        <div class="rating">
+                <a href="#5" title="Donner 5 étoiles">☆</a>
+                <a href="#4" title="Donner 4 étoiles">☆</a>
+                <a href="#3" title="Donner 3 étoiles">☆</a>
+                <a href="#2" title="Donner 2 étoiles">☆</a>
+                <a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
+        <div class="topspotify">
+          <h1 id="topspot">TOP SPOTIFY</h1>
+          <iframe src="https://open.spotify.com/embed?uri=spotify:user:thisisluciano:playlist:65GTUYlY3JCGhqCCP64cmR" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+        <div class="rating">
+                <a href="#5" title="Donner 5 étoiles">☆</a>
+                <a href="#4" title="Donner 4 étoiles">☆</a>
+                <a href="#3" title="Donner 3 étoiles">☆</a>
+                <a href="#2" title="Donner 2 étoiles">☆</a>
+                <a href="#1" title="Donner 1 étoile">☆</a>
+        </div>
+      </div>
+      <h2 id="suggest">Suggestions</h2><!--Division des suggestions-->
+
+      <div id="sug">
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotify:playlist:37i9dQZEVXboleXzeK5pPz" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotify:playlist:37i9dQZF1DX742okrrpwah" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:7hwhuEQT4Fp5bzwLlYZtiz" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:6gidHRiuT1Aj0HxK7TzAC2" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:07vhVdeqDle0yPYGikOJqN" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:0AMTjYhbIJTXJcj2fJV5Bx" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:2Xx8ZUbuoyKnDgHh6Ot4xk" width="80" height="180" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+  <div class="nouveautes"><!--Division des nouveautés-->
+      <h2 id="nouv">Nouveautés</h2>
+      <div id="mus-autres"><!--Tableau Airtable-->
+      </div>
+    </div>
+    <footer><!--Pied de page hommage à notre canard-->
+    <pfoot>© Tourista</pfoot>
+    </footer>
+  </div>
+
+
+</div>
+</body>
+</html>

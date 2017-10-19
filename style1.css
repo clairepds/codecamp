@@ -8,48 +8,81 @@ font-size: 100%;
 }
 
 header {
-font-size: 150%;
+font-size: 190%;
 color: #CD5C5C;
-text-align: left;
+text-align: center;
+font-family:monospace;
 }
 
-h1 {
-  font-size: 200%;
-  color: grey;
+.logo {
+ width:145px;
+ display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+h5 {font-size: 150%;
+color: black;
+text-align: center;
+padding-top: 3%;
+padding-bottom: 6%;
+font-family: monospace;
 }
 
 h2 {
   font-size: 200%;
-  color: grey;
+  color: black;
   padding-top: 15%;
   text-align: center;
   padding-bottom: 5%;
 }
 
 .left {
-  background-image:url(images/lights.jpg);
+  background-color: black;
   padding: 2%;
 }
 
 .grande {
-  background-color: lavender;
+  background-image:url(images/transp.png);
   padding: 0;
+  text-align: center;
 }
 
-#sug {
+.lien_suggest, .lien_suggest:hover{
+  font-size: 160%;
+  color: white ;
+  text-align: left;
+  font-family: monospace;
+  text-decoration: none;
+  text-decoration: inherit: white;
+}
+
+.lien_spot, .lien_spot:hover{
+  color: black ;
+}
+.lien_nouv, .lien_nouv:hover{
+  color: black ;
+}
+
+.lien_mond, .lien_mond:hover{
+  color: black ;
+}
+
+#sug, #mus-autres {
   display: flex;
   justify-content: space-around;
+
 }
 
 .prim {
-  background-color: lavender;
+  background-image:url(images/transp.png);
   text-align: center;
   padding: 2%;
   display: inline-block;
 }
 
 .dou {
-  background-color: lavender;
+  background-image:url(images/transp.png);
   text-align: center;
   padding: 2%;
   display: inline-block;
@@ -57,7 +90,7 @@ h2 {
 .topfrance {
   padding-top: 15%;
   text-align: center;
-  color: grey;
+  color: black;
 }
 
 .topspotify {
@@ -68,12 +101,16 @@ h2 {
 
 h1 {
   padding-top: 2%;
+  color: black;
+  font-family: monospace;
+  font-size: 300%;
 }
 
 h4 {
-font-size: 150%;
+font-size: 220%;
 color: white ;
 text-align: left;
+font-family:monospace;
 }
 
 section {
@@ -89,17 +126,43 @@ section {
 }
 
 .search-input {
-  width: 148px;
+  width: 140px;
 }
 
 p {
-font-size: 130%;
+font-size: 160%;
 color: white ;
 text-align: left;
+font-family: monospace;
+}
+
+pfoot {
+font-size: 160%;
+color: noir ;
+text-align: center;
+font-family: monospace;
 }
 
 ul {
  font-size: 130%;
 color: white ;
 text-align: center;
+}
+
+.rating {
+  direction: rtl;
+}
+.rating a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 2em;
+  transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+
 }
